@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "EA Lunch Reminder",
+  "description": "This extension will remind the East Agile lunch time to order",
+  "version": "1.0",
+  "background": {
+    "scripts" : ["event.js"]
+  },
+
+  "permissions": [
+    "http://lunch.eastagile.vn/"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
