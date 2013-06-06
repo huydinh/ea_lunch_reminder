@@ -5,11 +5,13 @@
   "description": "This extension will remind the East Agile lunch time to order",
   "version": "1.0",
   "background": {
+    "persistent" : true,
     "scripts" : ["event.js"]
   },
 
   "permissions": [
-    "http://lunch.eastagile.vn/"
+    "http://lunch.eastagile.vn/",
+    "tabs"
   ],
   "browser_action": {
     "default_icon": "icon.png",
