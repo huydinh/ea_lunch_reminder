@@ -17,9 +17,15 @@ function sleepLunchCheck() {
 	}, 23 * 60 * 60 * 1000);
 }
 
+welcomeMessage();
 checkLunchTime();
 
 
 chrome.windows.onCreated.addListener(function() {
 	checkLunchTime();
 })
+
+function welcomeMessage() {
+	alert('Have set up lunch time alrm!');
+}
+
